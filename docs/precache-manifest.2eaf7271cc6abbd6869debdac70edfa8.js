@@ -28,16 +28,16 @@ self.__precacheManifest = [
     "url": "/vinastalgia/static/media/retro-tv-w.065c33f3.png"
   },
   {
-    "revision": "faea3367f031e3c407a88316ccc93c45",
-    "url": "/vinastalgia/static/media/MSSansSerif.faea3367.woff2"
+    "revision": "bf40df6254d9fa37eca8cbb28635b506",
+    "url": "/vinastalgia/static/media/Fixedsys.bf40df62.woff2"
   },
   {
     "revision": "5eea62875443d3f0996fde5929fae727",
     "url": "/vinastalgia/static/media/MSSansSerifBold.5eea6287.woff2"
   },
   {
-    "revision": "bf40df6254d9fa37eca8cbb28635b506",
-    "url": "/vinastalgia/static/media/Fixedsys.bf40df62.woff2"
+    "revision": "faea3367f031e3c407a88316ccc93c45",
+    "url": "/vinastalgia/static/media/MSSansSerif.faea3367.woff2"
   },
   {
     "revision": "60a1376a906bc57d86d5146cd0ac544e",
