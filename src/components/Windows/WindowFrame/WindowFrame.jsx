@@ -1,24 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import { StyledFrame, TitleBar, ButtonGroup, StyledMenu } from './FrameStyled';
-import minimize from '../../../assets/titlebar-icons/minimize.png';
-import maximizeDisabled from '../../../assets/titlebar-icons/maximize-disabled.png';
-import close from '../../../assets/titlebar-icons/close.png';
+import { StyledFrame, TitleBar, ButtonGroup, StyledMenu } from "./FrameStyled";
+import minimize from "../../../assets/titlebar-icons/minimize.png";
+import maximizeDisabled from "../../../assets/titlebar-icons/maximize-disabled.png";
+import close from "../../../assets/titlebar-icons/close.png";
 
-function Frame({ children, id, img, title, blurred, showMenu, width, onMinimize, onExit, isMinimized }) {
-  const [coordinates, setCoordinates] = useState({ x: random() + 100, y: random() + 30 });
+function Frame({
+  children,
+  id,
+  img,
+  title,
+  blurred,
+  showMenu,
+  width,
+  onMinimize,
+  onExit,
+  isMinimized,
+  initialX,
+  initialY,
+}) {
+  const [coordinates, setCoordinates] = useState({
+    x: initialX,
+    y: random() + initialY,
+  });
   const [offset, setOffset] = useState({ x: coordinates.x, y: coordinates.y });
 
   useEffect(() => {
-    const frameTitle = document.querySelector('#' + id + ' .title');
-    frameTitle.addEventListener('mousedown', dragStart);
+    const frameTitle = document.querySelector("#" + id + " .title");
+    frameTitle.addEventListener("mousedown", dragStart);
 
-    return () => frameTitle.removeEventListener('mousedown', dragStart);
+    return () => frameTitle.removeEventListener("mousedown", dragStart);
     // eslint-disable-next-line
   }, [offset]);
 
   function dragStart(event) {
-    window.onmousemove = (e) => dragging(e, { x: event.clientX, y: event.clientY });
+    window.onmousemove = (e) =>
+      dragging(e, { x: event.clientX, y: event.clientY });
     window.onmouseup = dragEnd;
   }
 
@@ -27,7 +44,6 @@ function Frame({ children, id, img, title, blurred, showMenu, width, onMinimize,
     let y = axis.y - event.clientY;
     setOffset({ x: event.clientX, y: event.clientY });
     setCoordinates({ x: coordinates.x - x, y: coordinates.y - y });
-
   }
 
   function dragEnd() {
@@ -39,13 +55,22 @@ function Frame({ children, id, img, title, blurred, showMenu, width, onMinimize,
     return Math.round(Math.random() * 100);
   }
 
-  const menu = showMenu ?
+  const menu = showMenu ? (
     <StyledMenu>
-      <span><u>F</u>ile</span>
-      <span><u>E</u>dit</span>
-      <span><u>S</u>earch</span>
-      <span><u>H</u>elp</span>
-    </StyledMenu> : null;
+      <span>
+        <u>F</u>ile
+      </span>
+      <span>
+        <u>E</u>dit
+      </span>
+      <span>
+        <u>S</u>earch
+      </span>
+      <span>
+        <u>H</u>elp
+      </span>
+    </StyledMenu>
+  ) : null;
 
   return (
     <StyledFrame
@@ -74,14 +99,12 @@ function Frame({ children, id, img, title, blurred, showMenu, width, onMinimize,
             <img src={close} draggable="false" alt="Close" />
           </button>
         </ButtonGroup>
-
       </TitleBar>
 
       {menu}
 
       {children}
-
-    </StyledFrame >
+    </StyledFrame>
   );
 }
 

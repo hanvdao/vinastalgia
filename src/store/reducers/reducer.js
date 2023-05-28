@@ -1,4 +1,4 @@
-import * as actionTypes from '../actions/actionTypes';
+import * as actionTypes from "../actions/actionTypes";
 
 const initialState = {
   showStart: false,
@@ -6,15 +6,20 @@ const initialState = {
   about: {
     show: false,
     blurred: false,
-    minimized: false
+    minimized: false,
   },
   notepad: {
-    show: false,
+    show: true,
     blurred: false,
-    minimized: false
+    minimized: false,
   },
-  shutDown: false
-}
+  mediaPlayer: {
+    show: true,
+    blurred: false,
+    minimized: false,
+  },
+  shutDown: false,
+};
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -22,66 +27,79 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         about: {
-          ...state.about
+          ...state.about,
         },
         notepad: {
-          ...state.notepad
+          ...state.notepad,
         },
-        shutDown: true
-      }
+        mediaPlayer: {
+          ...state.mediaPlayer,
+        },
+        shutDown: true,
+      };
 
     case actionTypes.START_BUTTON_CLICKED:
       return {
         ...state,
         about: {
           ...state.about,
-          blurred: true
+          blurred: true,
         },
         notepad: {
           ...state.notepad,
-          blurred: true
+          blurred: true,
         },
-        showStart: !state.showStart
-      }
+        mediaPlayer: {
+          ...state.mediaPlayer,
+          blurred: true,
+        },
+        showStart: !state.showStart,
+      };
 
     case actionTypes.START_MENU_BLUR:
       return {
         ...state,
         about: {
-          ...state.about
+          ...state.about,
         },
         notepad: {
-          ...state.notepad
+          ...state.notepad,
         },
-        showStart: false
-      }
+        mediaPlayer: {
+          ...state.mediaPlayer,
+        },
+        showStart: false,
+      };
 
     case actionTypes.OPEN_MODAL:
       return {
         ...state,
         about: {
           ...state.about,
-          blurred: true
+          blurred: true,
         },
         notepad: {
-          ...state.notepad
+          ...state.notepad,
         },
-        showModal: true
-      }
+        mediaPlayer: {
+          ...state.mediaPlayer,
+        },
+        showModal: true,
+      };
 
     case actionTypes.OPEN_NOTEPAD:
       return {
         ...state,
         about: {
           ...state.about,
-          blurred: true
+          blurred: true,
         },
         notepad: {
           show: true,
           blurred: false,
-          minimized: false
-        }
-      }
+          minimized: false,
+        },
+      };
 
     case actionTypes.OPEN_ABOUT:
       return {
@@ -89,153 +107,154 @@ const reducer = (state = initialState, action) => {
         about: {
           show: true,
           blurred: false,
-          minimized: false
+          minimized: false,
         },
         notepad: {
           ...state.notepad,
-          blurred: true
-        }
-      }
+          blurred: true,
+        },
+      };
 
     case actionTypes.FOCUS_NOTEPAD:
       return {
         ...state,
         about: {
-          ...state.about
+          ...state.about,
         },
         notepad: {
           ...state.notepad,
-          blurred: false
-        }
-      }
+          blurred: false,
+        },
+      };
 
     case actionTypes.FOCUS_ABOUT: {
       return {
         ...state,
         about: {
           ...state.about,
-          blurred: false
+          blurred: false,
         },
         notepad: {
-          ...state.notepad
-        }
-      }
+          ...state.notepad,
+        },
+      };
     }
 
     case actionTypes.BLUR_NOTEPAD:
       return {
         ...state,
         about: {
-          ...state.about
+          ...state.about,
         },
         notepad: {
           ...state.notepad,
           blurred: true,
-        }
-      }
+        },
+      };
 
     case actionTypes.BLUR_ABOUT:
       return {
         ...state,
         about: {
           ...state.about,
-          blurred: true
+          blurred: true,
         },
         notepad: {
-          ...state.notepad
-        }
-      }
+          ...state.notepad,
+        },
+      };
 
     case actionTypes.MINIMIZE_NOTEPAD:
       return {
         ...state,
         about: {
-          ...state.about
+          ...state.about,
         },
         notepad: {
           ...state.notepad,
-          minimized: true
-        }
-      }
+          minimized: true,
+        },
+      };
 
     case actionTypes.MINIMIZE_ABOUT:
       return {
         ...state,
         notepad: {
-          ...state.notepad
+          ...state.notepad,
         },
         about: {
           ...state.about,
-          minimized: true
-        }
-      }
+          minimized: true,
+        },
+      };
 
     case actionTypes.MAXIMIZE_NOTEPAD:
       return {
         ...state,
         about: {
-          ...state.about
+          ...state.about,
         },
         notepad: {
           ...state.notepad,
           blurred: false,
-          minimized: false
-        }
-      }
+          minimized: false,
+        },
+      };
 
     case actionTypes.MAXIMIZE_ABOUT:
       return {
         ...state,
         notepad: {
-          ...state.notepad
+          ...state.notepad,
         },
         about: {
           ...state.about,
           minimized: false,
-          blurred: false
-        }
-      }
+          blurred: false,
+        },
+      };
 
     case actionTypes.EXIT_NOTEPAD:
       return {
         ...state,
         about: {
-          ...state.about
+          ...state.about,
         },
         notepad: {
           show: false,
           minimized: false,
-          blurred: false
-        }
-      }
+          blurred: false,
+        },
+      };
 
     case actionTypes.EXIT_ABOUT:
       return {
         ...state,
         notepad: {
-          ...state.notepad
+          ...state.notepad,
         },
         about: {
           show: false,
           blurred: false,
-          minimized: false
-        }
-      }
+          minimized: false,
+        },
+      };
 
     case actionTypes.EXIT_MODAL:
       return {
         ...state,
         about: {
-          ...state.about
+          ...state.about,
         },
         notepad: {
-          ...state.notepad
+          ...state.notepad,
         },
-        showModal: false
-      }
+        showModal: false,
+      };
 
-    default: return state;
+    default:
+      return state;
   }
-}
+};
 
 export default reducer;

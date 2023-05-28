@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'MS Sans Serif';
-  src: url('../assets/fonts/MSSansSerif.woff2') format('woff2');
+  font-family: "MS Sans Serif";
+  src: url("../assets/fonts/MSSansSerif.woff2") format("woff2");
   font-weight: normal;
   font-display: fallback;
 }
 
 @font-face {
-  font-family: 'MS Sans Serif';
-  src: url('../assets/fonts/MSSansSerifBold.woff2') format('woff2');
+  font-family: "MS Sans Serif";
+  src: url("../assets/fonts/MSSansSerifBold.woff2") format("woff2");
   font-weight: bold;
   font-display: fallback;
 }
 
 @font-face {
-  font-family: 'Fixedsys';
-  src: url('../assets/fonts/Fixedsys.woff2');
+  font-family: "Fixedsys";
+  src: url("../assets/fonts/Fixedsys.woff2");
   font-display: fallback;
 }
 
@@ -22,23 +22,23 @@
   box-sizing: border-box;
   font-size: 12px;
   outline: none;
-  font-family: 'MS Sans Serif';
-  -moz-user-select: none; 
-  -webkit-user-select: none; 
-  -ms-user-select:none; 
-  user-select:none;
-  -o-user-select:none;
+  font-family: "MS Sans Serif";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
 }
 
-html *{
+html * {
   cursor: url(../assets/cursors/cursor-default.png), default;
 }
 
-html.progress *{
+html.progress * {
   cursor: url(../assets/cursors/cursor-progress.png), progress;
 }
 
-html.wait *{
+html.wait * {
   cursor: url(../assets/cursors/cursor-wait.png), wait;
 }
 
@@ -52,11 +52,12 @@ a {
 
 div.Notepad {
   cursor: url(../assets/cursors/cursor-text.png), text;
-  font-family: 'Fixedsys', monospace;
+  font-family: "Fixedsys", monospace;
 }
 
-html, 
-body, .App {
+html,
+body,
+.App {
   margin: 0;
   overflow: hidden;
 }
@@ -66,5 +67,42 @@ body, .App {
   width: 100vw;
   position: fixed;
   overflow: hidden;
+  background-image: url("https://i.pinimg.com/originals/c1/c0/12/c1c01261f8780654e1a197fa1d2c254e.gif");
+  background-image: url("https://media.tenor.com/QUG8AAcrM5YAAAAM/static.gif");
+  background-image: url("  https://thumbs.gfycat.com/EarlyImpartialBluebreastedkookaburra-size_restricted.gif");
+  background-image: url("https://31.media.tumblr.com/tumblr_mbjwlvwO5R1reeolao1_500.gif");
+  background-image: url("https://media1.giphy.com/media/KYOD96tSm8Ovm/200w.gif?cid=82a1493blxlksvuttxogp6av5bccy6k4izhagvlebqmcnxr3&ep=v1_gifs_related&rid=200w.gif&ct=g");
+  background-image: url("https://gifdb.com/images/high/tv-static-trippy-80s-retro-gqj3pq294t35sdy5.gif");
   background-color: #008080;
+}
+
+.tv-button-container {
+  --angle: 0deg;
+
+  border: 1vmin solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    )
+    1;
+
+  animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
