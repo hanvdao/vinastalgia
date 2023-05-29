@@ -1,7 +1,7 @@
 {
   "main.css": "/vinastalgia/static/css/main.65c71900.chunk.css",
-  "main.js": "/vinastalgia/static/js/main.7a6fc4be.chunk.js",
-  "main.js.map": "/vinastalgia/static/js/main.7a6fc4be.chunk.js.map",
+  "main.js": "/vinastalgia/static/js/main.9ea0be19.chunk.js",
+  "main.js.map": "/vinastalgia/static/js/main.9ea0be19.chunk.js.map",
   "static/js/1.e58e599f.chunk.js": "/vinastalgia/static/js/1.e58e599f.chunk.js",
   "static/js/1.e58e599f.chunk.js.map": "/vinastalgia/static/js/1.e58e599f.chunk.js.map",
   "runtime~main.js": "/vinastalgia/static/js/runtime~main.74433467.js",
@@ -9,9 +9,9 @@
   "static/media/shutdown.png": "/vinastalgia/static/media/shutdown.6863793f.png",
   "static/media/startup.mp3": "/vinastalgia/static/media/startup.337a0b0e.mp3",
   "static/media/retro-tv-w.png": "/vinastalgia/static/media/retro-tv-w.065c33f3.png",
-  "static/media/global-styles.css": "/vinastalgia/static/media/MSSansSerifBold.5eea6287.woff2",
+  "static/media/global-styles.css": "/vinastalgia/static/media/Fixedsys.bf40df62.woff2",
   "static/css/main.65c71900.chunk.css.map": "/vinastalgia/static/css/main.65c71900.chunk.css.map",
   "index.html": "/vinastalgia/index.html",
-  "precache-manifest.6451efded27fff8bc812c70ee423d069.js": "/vinastalgia/precache-manifest.6451efded27fff8bc812c70ee423d069.js",
+  "precache-manifest.55868ca9bd02bdb053b255990e030bfb.js": "/vinastalgia/precache-manifest.55868ca9bd02bdb053b255990e030bfb.js",
   "service-worker.js": "/vinastalgia/service-worker.js"
 }
