@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/vinastalgia/static/media/MSSansSerifBold.5eea6287.woff2"
   },
   {
-    "revision": "e9672ec5d85fda4a1c22d8e778b4f18a",
+    "revision": "d23b7254e4add64b186bc76a2ae14394",
     "url": "/vinastalgia/index.html"
   }
 ];
