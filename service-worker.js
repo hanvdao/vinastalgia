@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/vinastalgia/precache-manifest.678139820ee6470242e94f1f33e314ba.js"
+  "/vinastalgia/precache-manifest.cf7a90149841e6c9a7e8dbbfaa82af97.js"
 );
 
 workbox.clientsClaim();
