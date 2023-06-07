@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2f7de3af8c1e6406f4f5",
+    "revision": "072f3641683bee5c1f63",
     "url": "/vinastalgia/static/css/main.ac168632.chunk.css"
   },
   {
-    "revision": "2f7de3af8c1e6406f4f5",
-    "url": "/vinastalgia/static/js/main.2f7de3af.chunk.js"
+    "revision": "072f3641683bee5c1f63",
+    "url": "/vinastalgia/static/js/main.072f3641.chunk.js"
   },
   {
     "revision": "4bc6f4a8a2edfa8c0d5a",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/vinastalgia/static/media/MSSansSerifBold.5eea6287.woff2"
   },
   {
-    "revision": "4125c93e2611197f442dbed44367948b",
+    "revision": "9489c9c70844c5c6a36d27cd864e2f2d",
     "url": "/vinastalgia/index.html"
   }
 ];
