@@ -1,7 +1,7 @@
 {
   "main.css": "/vinastalgia/static/css/main.ac168632.chunk.css",
-  "main.js": "/vinastalgia/static/js/main.21c46bae.chunk.js",
-  "main.js.map": "/vinastalgia/static/js/main.21c46bae.chunk.js.map",
+  "main.js": "/vinastalgia/static/js/main.ce73d161.chunk.js",
+  "main.js.map": "/vinastalgia/static/js/main.ce73d161.chunk.js.map",
   "static/js/1.4bc6f4a8.chunk.js": "/vinastalgia/static/js/1.4bc6f4a8.chunk.js",
   "static/js/1.4bc6f4a8.chunk.js.map": "/vinastalgia/static/js/1.4bc6f4a8.chunk.js.map",
   "runtime~main.js": "/vinastalgia/static/js/runtime~main.74433467.js",
@@ -12,6 +12,6 @@
   "static/media/global-styles.css": "/vinastalgia/static/media/MSSansSerifBold.5eea6287.woff2",
   "static/css/main.ac168632.chunk.css.map": "/vinastalgia/static/css/main.ac168632.chunk.css.map",
   "index.html": "/vinastalgia/index.html",
-  "precache-manifest.c30a8f4ed8f12b642f654c0cdcac439d.js": "/vinastalgia/precache-manifest.c30a8f4ed8f12b642f654c0cdcac439d.js",
+  "precache-manifest.8721108d2af2fb5dc09a5d91ee599b8a.js": "/vinastalgia/precache-manifest.8721108d2af2fb5dc09a5d91ee599b8a.js",
   "service-worker.js": "/vinastalgia/service-worker.js"
 }
