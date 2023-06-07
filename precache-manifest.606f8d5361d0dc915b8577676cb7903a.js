@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fa77002cc7b227b503c4",
+    "revision": "88dc62ad0942459afc16",
     "url": "/vinastalgia/static/css/main.ac168632.chunk.css"
   },
   {
-    "revision": "fa77002cc7b227b503c4",
-    "url": "/vinastalgia/static/js/main.fa77002c.chunk.js"
+    "revision": "88dc62ad0942459afc16",
+    "url": "/vinastalgia/static/js/main.88dc62ad.chunk.js"
   },
   {
     "revision": "4bc6f4a8a2edfa8c0d5a",
@@ -32,15 +32,15 @@ self.__precacheManifest = [
     "url": "/vinastalgia/static/media/MSSansSerif.faea3367.woff2"
   },
   {
-    "revision": "bf40df6254d9fa37eca8cbb28635b506",
-    "url": "/vinastalgia/static/media/Fixedsys.bf40df62.woff2"
-  },
-  {
     "revision": "5eea62875443d3f0996fde5929fae727",
     "url": "/vinastalgia/static/media/MSSansSerifBold.5eea6287.woff2"
   },
   {
-    "revision": "27a1dca87cb30e334dad07a50acac980",
+    "revision": "bf40df6254d9fa37eca8cbb28635b506",
+    "url": "/vinastalgia/static/media/Fixedsys.bf40df62.woff2"
+  },
+  {
+    "revision": "493a772612a8f477701c5d4ae618b04b",
     "url": "/vinastalgia/index.html"
   }
 ];
