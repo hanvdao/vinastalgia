@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "5db20a1fe3362009f194",
-    "url": "/vinastalgia/static/css/main.3b75d13b.chunk.css"
+    "revision": "e1ed48413dde1223c5da",
+    "url": "/vinastalgia/static/css/main.ac168632.chunk.css"
   },
   {
-    "revision": "5db20a1fe3362009f194",
-    "url": "/vinastalgia/static/js/main.5db20a1f.chunk.js"
+    "revision": "e1ed48413dde1223c5da",
+    "url": "/vinastalgia/static/js/main.e1ed4841.chunk.js"
   },
   {
-    "revision": "5b049f28f8859239d21f",
-    "url": "/vinastalgia/static/js/1.5b049f28.chunk.js"
+    "revision": "4bc6f4a8a2edfa8c0d5a",
+    "url": "/vinastalgia/static/js/1.4bc6f4a8.chunk.js"
   },
   {
     "revision": "744334670c9ff1f0e764",
@@ -28,19 +28,19 @@ self.__precacheManifest = [
     "url": "/vinastalgia/static/media/retro-tv-w.065c33f3.png"
   },
   {
-    "revision": "faea3367f031e3c407a88316ccc93c45",
-    "url": "/vinastalgia/static/media/MSSansSerif.faea3367.woff2"
-  },
-  {
     "revision": "bf40df6254d9fa37eca8cbb28635b506",
     "url": "/vinastalgia/static/media/Fixedsys.bf40df62.woff2"
+  },
+  {
+    "revision": "faea3367f031e3c407a88316ccc93c45",
+    "url": "/vinastalgia/static/media/MSSansSerif.faea3367.woff2"
   },
   {
     "revision": "5eea62875443d3f0996fde5929fae727",
     "url": "/vinastalgia/static/media/MSSansSerifBold.5eea6287.woff2"
   },
   {
-    "revision": "53cd2d5366b965448ca2833a0820bc4e",
+    "revision": "68df304a46e0c5e7b5b5cc0d6afbbec6",
     "url": "/vinastalgia/index.html"
   }
 ];
