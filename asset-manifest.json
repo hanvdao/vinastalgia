@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vinastalgia/static/css/main.61c58e8c.css",
-    "main.js": "/vinastalgia/static/js/main.d01203a6.js",
+    "main.js": "/vinastalgia/static/js/main.056f2652.js",
     "static/media/retro-tv-w.png": "/vinastalgia/static/media/retro-tv-w.cab97b1f69c0ef0a9734.png",
     "static/media/startup.mp3": "/vinastalgia/static/media/startup.82d562cd98eaa82ad3ce.mp3",
     "static/media/shutdown.png": "/vinastalgia/static/media/shutdown.d5ae14ece8b16f64af7d.png",
@@ -10,10 +10,10 @@
     "static/media/MSSansSerifBold.woff2": "/vinastalgia/static/media/MSSansSerifBold.43a74dcfbb6ce8b36da6.woff2",
     "index.html": "/vinastalgia/index.html",
     "main.61c58e8c.css.map": "/vinastalgia/static/css/main.61c58e8c.css.map",
-    "main.d01203a6.js.map": "/vinastalgia/static/js/main.d01203a6.js.map"
+    "main.056f2652.js.map": "/vinastalgia/static/js/main.056f2652.js.map"
   },
   "entrypoints": [
     "static/css/main.61c58e8c.css",
-    "static/js/main.d01203a6.js"
+    "static/js/main.056f2652.js"
   ]
 }
