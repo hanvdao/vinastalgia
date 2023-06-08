@@ -16,24 +16,45 @@ import dosPromptImg from "./assets/DOS_prompt.png";
 
 const objects = [
   {
-    name: "Slinky",
-    description: `The slinky toy is an iconic metal spring that has captivated generations with its simple yet mesmerizing motion. Invented by Richard James in the early 1940s, the slinky quickly became a sensation, epitomizing the spirit of playfulness and innovation. Its ability to "walk" down stairs or appear to defy gravity evokes a sense of nostalgia for adults, while still captivating the imaginations of children today. Over the years, the slinky has remained a timeless classic, maintaining its prevalence in the toy industry as a beloved symbol of childhood joy and endless entertainment.`,
-    imgSrc:
-      "https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D&w=1000&q=80",
+    name: "lo-xo",
+    description: `As a child (and even now :">), I was always captivated by colorful and quirky things. This SLINKY was one of those fascinating items. Just holding it and stretching it out for playtime, but seeing the rainbow trail it left on my hands was a sight that delighted my eyes`,
   },
   {
-    name: "dog",
-    description:
-      "DOG ipsum dolor sit amet, consectetur adip non pro id el lorem ipsum dolor sit amet, consectetur adip non pro id el lorem ipsum dolor sit amet, consectetur adip non pro id el lorem ipsum dolor sit amet, consectetur adip non pro id el lorem ipsum dolor sit amet, consectetur adip non pro id el",
-    imgSrc:
-      "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*",
+    name: "babol",
+    description: `It was the ultimate chewing gum sensation of the late 80s and early 90s. I can still recall the excitement of unwrapping that brightly colored package, popping a piece into my mouth, and blowing enormous bubbles that seemed to defy gravity.`,
   },
   {
-    name: "pot",
-    description:
-      "POT ipsum dolor sit amet, consectetur adip non pro id el lorem ipsum dolor sit amet, consectetur adip non pro id el lorem ipsum dolor sit amet, consectetur adip non pro id el lorem ipsum dolor sit amet, consectetur adip non pro id el lorem ipsum dolor sit amet, consectetur adip non pro id el",
-    imgSrc:
-      "  https://thumbs.dreamstime.com/b/enamel-cooking-pot-red-isolated-white-background-38722856.jpg",
+    name: "burger",
+    description: `I still remember the Burger gummy candy, a delightful novelty treat from my childhood in the 90s. It was like holding a mini burger in my hand, with its gummy bun, patty, and vibrant candy toppings. I would carefully assemble the candy burger before taking a bite, relishing the sweet and tangy flavors.`,
+  },
+  {
+    name: "iphone",
+    description: `When I was little, I would often dash to the nearby corner store to get myself a this iphone etch-a-sketch toy. I would happily write and draw on that plastic surface, and then use a gentle swipe of the eraser to wipe it all clean. It was such a simple yet captivating toy that easily became an addictive habit`,
+  },
+  {
+    name: "keo-deo",
+    description: `The round box filled with chewy candies that made a delightful sound when shaken was a favorite treat that the 80s and 90s generation still long for. In the past, a box like this would cost only 500 dong.`,
+  },
+  {
+    name: "keo-thai",
+    description: `Behold, the M&M's of our childhood! Back in the day, M&M's were a rarity, and the only chocolate treat we had was this exquisite Thai chocolate candy.`,
+  },
+  {
+    name: "ramen",
+    description: `I remember in the old days, every child would bring a pack of instant noodles to school and eat it discreetly, while sitting in class, sometimes even sneaking a bite with the teacher unaware under the desk.`,
+  },
+  {
+    name: "ring-pop",
+    description: `Ah, the Ring Pop! I can still vividly recall the excitement of wearing that colorful candy on my finger as a child in the 90s. It was a delicious and fashionable treat that made me feel like a trendy superstar. I would proudly show off my Ring Pop to my friends, savoring the fruity flavors and feeling a sense of pure joy. Those moments with my Ring Pop hold a special place in my heart, reminding me of a time filled with fun, imagination, and the simple pleasures of childhood.`,
+  },
+  {
+    name: "trong-tay",
+    description: `I remember vividly, during the Mid-Autumn Festivals of my childhood, the bamboo drum held a special place in my heart. Its rhythmic beats would resonate throughout the neighborhood, filling the air with excitement and joy. I would eagerly grasp the drumsticks, feeling the vibrations as I struck the drum's surface, creating a symphony of sounds. Those cherished moments of drumming on the bamboo drum remain etched in my memory, symbolizing the spirit of togetherness and festive delight during those magical moonlit nights.`,
+  },
+  {
+    name: "tamagochi",
+    description: `A pink original tamagochi. I was in grade 6, it was the mid 90s. Brought that little dude everywhere. I remember worrying it would die at nighttime because it didn't have a backlight and I wasn't allowed to turn the lights on after bed time.
+    I always ended up getting the ugliest adult tamas because I was a terrible parent.`,
   },
 ];
 
@@ -60,7 +81,9 @@ const ScrollingContent = styled.div`
 function App({ aboutVisible, notepadVisible, shutDown, showModal }) {
   const [audio] = useState(new Audio(startup));
 
-  const [objectIndex, setObjectIndex] = useState(0);
+  const [objectIndex, setObjectIndex] = useState(
+    Math.floor(Math.random() * objects.length - 1)
+  );
 
   const handleClick = () => {
     if (objectIndex + 1 >= objects.length) {
@@ -99,19 +122,12 @@ function App({ aboutVisible, notepadVisible, shutDown, showModal }) {
       {notepadDisplay}
       {shutDownDisplay}
       {modalDisplay}
-      <TV object={objects[objectIndex]} onClick={handleClick} />
-      <img src={dosPromptImg} style={{ position: "relative", zIndex: 999 }} />
-
-      {/* <div style={{ position: "absolute", bottom: "50px", left: "600px" }}>
-        <Button
-          clicked={() => handleClick()}
-          id="tv-button"
-          pad={50}
-          height={50}
-        >
-          {`Click Me    ( ͡° ͜ʖ ͡°)`}
-        </Button>
-      </div> */}
+      <TV object={objects[objectIndex]} />
+      <img
+        src={dosPromptImg}
+        style={{ position: "relative", zIndex: 999 }}
+        onClick={handleClick}
+      />
 
       <ScrollingContainer>
         <ScrollingContent>
@@ -144,28 +160,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(App);
-
-// import React, { Suspense, useRef } from "react";
-// import { Canvas } from "@react-three/fiber";
-// import { OrbitControls, Stage } from "@react-three/drei";
-// import { Model } from "./models/Model.js";
-// export default function Viewer() {
-//   const ref = useRef();
-//   return (
-//     <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
-//       <Suspense fallback={null}>
-//         <Stage
-//           controls={ref}
-//           preset="rembrandt"
-//           intensity={1}
-//           environment="city"
-//         >
-//           false
-//           <Model />
-//           false
-//         </Stage>
-//       </Suspense>
-//       <OrbitControls ref={ref} autoRotate />
-//     </Canvas>
-//   );
-// }

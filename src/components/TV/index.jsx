@@ -9,7 +9,7 @@ const tvContainer = styled.div`
   height: 100vh;
 `;
 
-function Viewer() {
+function Viewer({ modelName }) {
   const ref = useRef();
   return (
     <div
@@ -23,8 +23,6 @@ function Viewer() {
         // border: "1px solid red",
       }}
     >
-      <h1>HELLO</h1>
-
       <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
         <Suspense fallback={null}>
           <Stage
@@ -34,7 +32,7 @@ function Viewer() {
             environment="city"
           >
             false
-            <Model />
+            <Model modelName={modelName} />
             false
           </Stage>
         </Suspense>
@@ -44,7 +42,7 @@ function Viewer() {
   );
 }
 
-export default function TV({ object, onClick }) {
+export default function TV({ object }) {
   return (
     // <div
     //   style={{
@@ -64,7 +62,7 @@ export default function TV({ object, onClick }) {
     //   />
     //   <h1>Hello</h1>
     // </div>
-    <tvContainer onClick={() => onClick()}>
+    <tvContainer>
       {/* {object && (
         <img
           src={object.imgSrc}
@@ -73,7 +71,7 @@ export default function TV({ object, onClick }) {
         />
       )} */}
 
-      <Viewer />
+      {object && <Viewer modelName={object.name} />}
 
       <img
         src={tvImageSrc}

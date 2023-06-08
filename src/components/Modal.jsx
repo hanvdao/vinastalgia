@@ -1,12 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import { connect } from 'react-redux';
+import React from "react";
+import styled from "styled-components";
+import { connect } from "react-redux";
 
-import { exitModal } from '../store/actions/actions';
-import { StyledFrame, TitleBar, ButtonGroup } from './Windows/WindowFrame/FrameStyled';
-import Button from './Button';
-import warningIcon from '../assets/icons/warning.png';
-import close from '../assets/titlebar-icons/close-disabled.png';
+import { exitModal } from "../store/actions/actions";
+import {
+  StyledFrame,
+  TitleBar,
+  ButtonGroup,
+} from "./Windows/WindowFrame/FrameStyled";
+import Button from "./Button";
+import warningIcon from "../assets/icons/warning.png";
+import close from "../assets/titlebar-icons/close-disabled.png";
 
 const ModalBackdrop = styled.div`
   position: absolute;
@@ -25,12 +29,18 @@ const Frame = styled(StyledFrame)`
 `;
 
 const BlinkingTitleBar = styled(TitleBar)`
-  animation: backColor .15s;
+  animation: backColor 0.15s;
   animation-iteration-count: 5;
 
   @keyframes backColor {
-    0% {background-color: rgb(0, 0, 127); color: rgb(255, 255, 255);}
-    50% {background-color: rgba(0, 0, 0, 0.4); color: rgb(200, 200, 200)}
+    0% {
+      background-color: rgb(0, 0, 127);
+      color: rgb(255, 255, 255);
+    }
+    50% {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: rgb(200, 200, 200);
+    }
   }
 `;
 
@@ -72,16 +82,16 @@ function Modal({ onModalExit }) {
         <StyledContainer>
           <img src={warningIcon} alt="Warning" />
           <span>
-            Well that feature is not ready yet. <br />
-            Why don't you try other things like Notepad,
-            and we promise you that feature will be available soon.
+            Oops! <br />
+            Sorry this feature is not available yet. Try Notepad!
           </span>
         </StyledContainer>
 
         <ButtonContainer>
-          <Button clicked={onModalExit} pad="30">OK</Button>
+          <Button clicked={onModalExit} pad="30">
+            OK
+          </Button>
         </ButtonContainer>
-
       </Frame>
     </ModalBackdrop>
   );
@@ -89,8 +99,8 @@ function Modal({ onModalExit }) {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onModalExit: () => dispatch(exitModal())
-  }
-}
+    onModalExit: () => dispatch(exitModal()),
+  };
+};
 
 export default connect(null, mapDispatchToProps)(Modal);

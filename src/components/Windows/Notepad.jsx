@@ -55,7 +55,7 @@ function Notepad({
       isMinimized={notepad.minimized}
     >
       <div className="Notepad" contentEditable="true" ref={inputRef}>
-        {object.description}
+        {object && object.description}
       </div>
     </WindowFrame>
   ) : null;
