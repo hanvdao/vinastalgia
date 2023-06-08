@@ -1,17 +1,19 @@
 {
-  "main.css": "/vinastalgia/static/css/main.ac168632.chunk.css",
-  "main.js": "/vinastalgia/static/js/main.7c9e462c.chunk.js",
-  "main.js.map": "/vinastalgia/static/js/main.7c9e462c.chunk.js.map",
-  "static/js/1.4bc6f4a8.chunk.js": "/vinastalgia/static/js/1.4bc6f4a8.chunk.js",
-  "static/js/1.4bc6f4a8.chunk.js.map": "/vinastalgia/static/js/1.4bc6f4a8.chunk.js.map",
-  "runtime~main.js": "/vinastalgia/static/js/runtime~main.74433467.js",
-  "runtime~main.js.map": "/vinastalgia/static/js/runtime~main.74433467.js.map",
-  "static/media/shutdown.png": "/vinastalgia/static/media/shutdown.6863793f.png",
-  "static/media/startup.mp3": "/vinastalgia/static/media/startup.337a0b0e.mp3",
-  "static/media/retro-tv-w.png": "/vinastalgia/static/media/retro-tv-w.065c33f3.png",
-  "static/media/global-styles.css": "/vinastalgia/static/media/MSSansSerifBold.5eea6287.woff2",
-  "static/css/main.ac168632.chunk.css.map": "/vinastalgia/static/css/main.ac168632.chunk.css.map",
-  "index.html": "/vinastalgia/index.html",
-  "precache-manifest.b7e91d70ed6c72382c1a721082503f60.js": "/vinastalgia/precache-manifest.b7e91d70ed6c72382c1a721082503f60.js",
-  "service-worker.js": "/vinastalgia/service-worker.js"
+  "files": {
+    "main.css": "/vinastalgia/static/css/main.61c58e8c.css",
+    "main.js": "/vinastalgia/static/js/main.dd24e24f.js",
+    "static/media/retro-tv-w.png": "/vinastalgia/static/media/retro-tv-w.cab97b1f69c0ef0a9734.png",
+    "static/media/startup.mp3": "/vinastalgia/static/media/startup.82d562cd98eaa82ad3ce.mp3",
+    "static/media/shutdown.png": "/vinastalgia/static/media/shutdown.d5ae14ece8b16f64af7d.png",
+    "static/media/MSSansSerif.woff2": "/vinastalgia/static/media/MSSansSerif.9f27aac92532d128c795.woff2",
+    "static/media/Fixedsys.woff2": "/vinastalgia/static/media/Fixedsys.3907142dcff96f47ff3c.woff2",
+    "static/media/MSSansSerifBold.woff2": "/vinastalgia/static/media/MSSansSerifBold.43a74dcfbb6ce8b36da6.woff2",
+    "index.html": "/vinastalgia/index.html",
+    "main.61c58e8c.css.map": "/vinastalgia/static/css/main.61c58e8c.css.map",
+    "main.dd24e24f.js.map": "/vinastalgia/static/js/main.dd24e24f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61c58e8c.css",
+    "static/js/main.dd24e24f.js"
+  ]
 }
